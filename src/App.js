@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { Switch, Route, Router } from 'react-router';
 
-function App() {
+import Header from './components/shared/Header/header'
+import Footer from './components/shared/Footer/footer'
+import Cadastro from './pages/Cadastro/Cadastro';
+import Home from './pages/Home/Home.js'
+import VagaView from './pages/VagaView/VagaView';
+import Edicao from './pages/Edicao/Edicao'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div className="body">  
+      <Header />
+      <Switch> 
+        <Route path="/" exact={true} component={Home}/>
+        <Route path="/add" component={Cadastro}/>
+        <Route path="/view/:id" component={VagaView}/>
+        <Route path="/edit/:id" component={Edicao}/>
+
+      </Switch>
+      <Footer></Footer>
+      </div>
+    );
 }
 
 export default App;

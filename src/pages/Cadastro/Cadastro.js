@@ -33,15 +33,15 @@ const Cadastro = (props) => {
     }
 
     return (
-        <div className="forumalario">
-            <form onSubmit={handleSubmit}>
-                <h3 className="tituloAdicionaFilme">Adicione um filme assistido</h3>             
-                <input type="text" name="titulo" placeholder="titulo"/>  
-                <input type="text" name="descricao" placeholder="descricao"/>  
-                <input type="text" name="prioridade" placeholder="prioridade"/>  
-                <input type="text" name="status" placeholder="status"/>
-                <input type="text" name="prazo" placeholder="prazo"/>  
-                <button className="botao-enviar" type="submit">Enviar</button>
+        <div className="view-container">
+            <form className="formulario" onSubmit={handleSubmit}>
+                <h3 className="tituloAdicionaFilme">Adicione uma nova tarefa</h3>             
+                <input type="text" name="titulo" placeholder="titulo" className="inputUser"/>  
+                <input type="text" name="descricao" placeholder="descricao" className="inputUser"/>  
+                <input type="text" name="prioridade" placeholder="prioridade" className="inputUser"/>  
+                <input type="text" name="status" placeholder="status" className="inputUser"/>
+                <input type="text" name="prazo" placeholder="prazo" className="inputUser"/>  
+                <button className="botao-enviar" type="submit" >Enviar</button>
             </form>
 
         </div>

@@ -1,0 +1,8 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    background-image: url("/public/img/imgBackground.png");
+    /* background: url("/public/images/imgBackground.png"); */
+
+}
+

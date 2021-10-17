@@ -19,6 +19,7 @@ const List = () => {
 
   return (
     <div className="container">
+
       {
         todo.map((todo, index) => (
           <Card data={todo} key={index}/>

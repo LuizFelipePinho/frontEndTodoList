@@ -9,9 +9,12 @@ const Card = (props) => {
         <div>
             <Link to={`/view/${todo._id}`}>
             <div className="card">
-                <h4>{todo.titulo}</h4>
-                <p>{todo.prazo}</p>
-                <p>{todo.status}</p>
+                <img src="/img/imgCard.png" className="imgCard"/>
+                <div className="info-card">
+                    <h4>{todo.titulo}</h4>
+                    <p>{todo.prazo}</p>
+                    <p>{todo.status}</p>
+                </div>
             </div>
             </Link>
         </div>

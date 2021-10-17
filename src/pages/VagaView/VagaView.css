@@ -1,0 +1,71 @@
+.container-view{
+    display: flex;
+    justify-content: center;
+    background-image: url("./imgView.png");
+    background-repeat: no-repeat;
+    background-position: 80% 40%;
+    background-size: 13rem 13rem;  /* 80 pixels de largura e 60 pixels de altura */
+
+
+
+}
+.box-view  {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1.1rem;
+    box-shadow: -1px 5px 7px 0px rgba(0,0,0,0.63);
+}
+
+.descricao-view{
+    text-align: center;
+    padding: 0.8rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.editar-view, .excluir-view {
+    padding: 0.6rem 1.3rem 0.6rem 1.3rem;
+    color: white;
+    border:  none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.editar-view {
+   background-color: #6765be;
+    
+}
+
+.excluir-view{
+    background-color: rgba(236, 10, 10, 0.589);
+}
+
+.modal-msg {
+    margin: 1rem;
+}
+.modal-not, .modal-yep{
+   color: white;
+    padding: 1rem 1.3rem 1rem 1.3rem;
+    margin: 1.3rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-not {
+   background-color: #6765be;
+}
+
+.modal-yep {
+    background-color: rgba(236, 10, 10, 0.589);
+
+}

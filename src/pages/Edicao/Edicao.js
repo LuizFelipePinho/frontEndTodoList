@@ -1,5 +1,6 @@
 import React, { useEffect, useState} from "react";
 import Api from "../../api/api";
+import './edicao.css'
 
 const Edicao = (props) => {
     const _id = props.match.params.id;
@@ -46,14 +47,14 @@ const Edicao = (props) => {
     }
 
     return (
-        <div className="forumalario">
-            <form onSubmit={handleSubmit}>
+        <div className="edit-container">
+            <form onSubmit={handleSubmit} className="formulario">
                 <h3 className="tituloAdicionaFilme">Adicione um filme assistido</h3>             
-                <input type="text" name="titulo" placeholder="titulo" onChange={handleFieldsChange}/>  
-                <input type="text" name="descricao" placeholder="descricao" onChange={handleFieldsChange}/>  
-                <input type="text" name="prioridade" placeholder="prioridade" onChange={handleFieldsChange}/>  
-                <input type="text" name="status" placeholder="status" onChange={handleFieldsChange}/>
-                <input type="text" name="prazo" placeholder="prazo" onChange={handleFieldsChange}/>  
+                <input type="text" name="titulo" placeholder="titulo" onChange={handleFieldsChange} className="inputUser"/>  
+                <input type="text" name="descricao" placeholder="descricao" onChange={handleFieldsChange} className="inputUser"/>  
+                <input type="text" name="prioridade" placeholder="prioridade" onChange={handleFieldsChange} className="inputUser"/>  
+                <input type="text" name="status" placeholder="status" onChange={handleFieldsChange} className="inputUser"/>
+                <input type="text" name="prazo" placeholder="prazo" onChange={handleFieldsChange} className="inputUser"/>  
                 <button className="botao-enviar" type="submit">Enviar</button>
             </form>
 

@@ -4,7 +4,7 @@ import './footer.css'
 const Footer = () => {
     return(
         <div className="footer">
-            desenvolvidor por Luiz Felipe Pinho
+            Desenvolvidor por Luiz Felipe Pinho
         </div>
 
 

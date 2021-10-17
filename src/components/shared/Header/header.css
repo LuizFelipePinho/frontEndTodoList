@@ -1,7 +1,19 @@
 .cabecalho{
     display: flex;
-    border: solid black 2px;
-    height: 4rem;
+    height: 5rem;
     align-items: center;
     justify-content: space-around;
+    background-color: rgb(96, 127, 249);
+    margin-bottom: 5rem;
+   
 }
+
+.cabecalho a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+

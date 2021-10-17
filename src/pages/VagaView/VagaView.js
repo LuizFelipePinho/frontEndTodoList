@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Api from '../../api/api';
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
+import './VagaView.css'
 
 
 const VagaView = (props) => {
@@ -33,22 +34,23 @@ const VagaView = (props) => {
     }
 
     return(
-        <div className="container">
-            <div>
-                <h2>{todo.titulo}</h2>
-                <p>{todo.descricao}</p>
-                <p>{todo.prazo}</p>
-                <p>{todo.status}</p>
+        <div className="container-view">
+            <div className="box-view">
+                <h2 className="titulo-view">{todo.titulo}</h2>
+                <p className="descricao-view">{todo.descricao}</p>
+                <p className="prazo-view">{todo.prazo}</p>
+                <p className="titulo-view">{todo.status}</p>
 
-
-            <Link to={`/edit/${todo._id}`}> <button>Editar</button></Link>
-            <button onClick={onOpenModal}>Excluir</button>
+                <div className="options">
+                    <Link to={`/edit/${todo._id}`}> <button className="editar-view">Editar</button></Link>
+                    <button onClick={onOpenModal} className="excluir-view">Excluir</button>
+                </div>
             </div>
         
             <Modal open={open} onClose={onCloseModal} center>
-            <h2>Deseja realmente Excluir</h2>
-            <button className="btn btn-danger" onClick={onCloseModal}>Não</button>
-            <button className="btn btn-success" onClick={handleDelete}>Sim</button>
+            <h2 className="modal-msg">Deseja realmente Excluir</h2>
+            <button className="modal-not" onClick={onCloseModal}>Não</button>
+            <button className="modal-yep" onClick={handleDelete}>Sim</button>
             </Modal>
         </div>
     )

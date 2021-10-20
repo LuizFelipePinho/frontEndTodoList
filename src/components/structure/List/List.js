@@ -9,7 +9,7 @@ const List = () => {
     getTodo();
   }, []);
   
-  const urlApi = 'http://localhost:3001/todo';
+  const urlApi = 'https://back-end-todo-list.herokuapp.com/todo';
 
   const getTodo = async () => {
     const response = await fetch(urlApi);

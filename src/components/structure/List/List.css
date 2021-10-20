@@ -4,6 +4,7 @@
     /* background-image: url("./imgBackground.png"); */
     background-position: top left;
     background-attachment: scroll;
+    flex-wrap: wrap;
     /* background-repeat: no-repeat; */
     /* background-size: 21rem; */
 
